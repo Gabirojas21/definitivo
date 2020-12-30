@@ -1,0 +1,27 @@
+$margintop: 250px;
+$fuente: "Nerko One",
+cursive;
+$bkcolor: #106eea;
+$colorfont: #222222;
+$textt: 'Yeon Sung',
+cursive;
+a {
+    color: $bkcolor;
+}
+
+a:hover {
+    color: $bkcolor;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h5 {
+    font-family: $fuente;
+}
+
+p {
+    font-family: $textt;
+    font-size: medium;
+}

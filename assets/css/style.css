@@ -1,0 +1,423 @@
+@charset "UTF-8";
+a {
+  color: #106eea;
+}
+
+a:hover {
+  color: #106eea;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h5 {
+  font-family: "Nerko One", cursive;
+}
+
+p {
+  font-family: "Yeon Sung", cursive;
+  font-size: medium;
+}
+
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+@media (max-width: 992px) {
+  #header {
+    padding: 15px;
+    top: 0;
+  }
+
+  #header .logo {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1366px) {
+  .nav-menu .drop-down .drop-down ul {
+    left: -90%;
+  }
+
+  .nav-menu .drop-down .drop-down:hover > ul {
+    left: -100%;
+    text-decoration: none;
+  }
+
+  .nav-menu .drop-down .drop-down > a:after {
+    content: "";
+  }
+}
+/*--------------------------------------------------------------
+# Sobre navegador
+--------------------------------------------------------------*/
+#topbar {
+  background: #106eea;
+  height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+  color: #fff;
+}
+
+#topbar.topbar-scrolled {
+  top: -40px;
+}
+
+#topbar .contact-info a {
+  line-height: 1;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#topbar .contact-info a:hover {
+  text-decoration: underline;
+}
+
+#topbar .contact-info i {
+  padding-right: 4px;
+  margin-left: 15px;
+}
+
+#topbar .contact-info i:first-child {
+  margin-left: 0;
+}
+
+#topbar .social-links a {
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 15px;
+  display: inline-block;
+  line-height: 1px;
+  transition: 0.3s;
+}
+
+#topbar .social-links a:hover {
+  color: black;
+}
+
+.social-links a {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 15px;
+  display: inline-block;
+  line-height: 1px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: black;
+}
+
+/*--------------------------------------------------------------
+# CABEZA
+--------------------------------------------------------------*/
+#header {
+  background: #fff;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 25px 0;
+  top: 40px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#header.header-scrolled {
+  top: 0;
+  padding: 15px;
+}
+
+#header .logo {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  font-family: "Nerko One", cursive;
+}
+
+#header .logo a {
+  color: #222222;
+}
+
+#header .logo a span {
+  color: #106eea;
+}
+
+#header .logo img {
+  max-height: 150px;
+}
+
+/* Navegacion */
+.nav-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > ul {
+  display: flex;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+  padding: 10px 0 10px 28px;
+}
+
+.nav-menu a {
+  display: block;
+  position: relative;
+  color: #222222;
+  transition: 0.3s;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 3px;
+  font-family: "Nerko One", cursive;
+}
+
+.nav-menu > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #106eea;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-menu a:hover:before,
+.nav-menu li:hover > a:before,
+.nav-menu .active > a:before {
+  visibility: visible;
+  width: 100%;
+  text-decoration: none;
+}
+
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover > a {
+  color: #106eea;
+  text-decoration: none;
+}
+
+.nav-menu .drop-down ul {
+  display: block;
+  position: absolute;
+  left: 26px;
+  top: calc(100% + 30px);
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  padding: 10px 0;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+
+.nav-menu .drop-down:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+  text-decoration: none;
+}
+
+.nav-menu .drop-down li {
+  min-width: 180px;
+  position: relative;
+}
+
+.nav-menu .drop-down ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: none;
+  color: #062b5b;
+}
+
+.nav-menu .drop-down ul a:hover,
+.nav-menu .drop-down ul .active > a,
+.nav-menu .drop-down ul li:hover > a {
+  color: #106eea;
+  text-decoration: none;
+}
+
+.nav-menu .drop-down > a:after {
+  content: "";
+  font-family: IcoFont;
+  padding-left: 5px;
+}
+
+.nav-menu .drop-down .drop-down ul {
+  top: 0;
+  left: calc(100% - 30px);
+}
+
+.nav-menu .drop-down .drop-down:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  text-decoration: none;
+}
+
+.nav-menu .drop-down .drop-down > a {
+  padding-right: 35px;
+}
+
+.nav-menu .drop-down .drop-down > a:after {
+  content: "";
+  font-family: IcoFont;
+  position: absolute;
+  right: 15px;
+}
+
+/*----------------------- BANNER ----------------------------*/
+.carousel {
+  margin-top: 250px;
+}
+
+/* ----------------------------- CUERPO -------------------------------------*/
+.tabla {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 10px;
+  border: 3px 3px 3px 3px;
+  /*  border: solid black; */
+}
+
+.colum {
+  width: 50%;
+  text-align: center;
+}
+
+.body {
+  /*  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%); */
+  background-color: #ffffff;
+}
+
+/*--------- Fuentes ------------- */
+.texttt {
+  font-family: "Yeon Sung", cursive;
+}
+
+label {
+  font-family: "Yeon Sung", cursive;
+}
+
+/* ------------- EQUIPOOS ---------------*/
+#galeria .col-lg-3 {
+  position: relative;
+}
+
+#galeria .down {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  transition: opacity 1.5s ease-in-out;
+  left: 0px;
+  margin: 0px;
+  padding: 25px;
+}
+
+#galeria .top {
+  width: 100%;
+  height: 300px;
+  margin: 0px;
+  padding: 25px;
+}
+
+#galeria img.down:hover {
+  opacity: 0;
+}
+
+/* presupuesto */
+.item {
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.item-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+
+.item-image {
+  height: 300px;
+  width: 100%;
+}
+
+.item-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px 15px;
+}
+
+.item-details > .item-price {
+  margin: 0;
+}
+
+/* ? SHOPPING CART */
+.shopping-cart-items {
+  padding: 20px 0px;
+}
+
+.shopping-cart-header {
+  border-bottom: 1px solid #ccc;
+}
+
+.shopping-cart-image {
+  max-width: 80px;
+  border-radius: 20px;
+}
+
+.shopping-cart-quantity-input {
+  max-width: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #eee;
+  padding: 5px;
+}
+
+.shopping-cart-total {
+  min-height: 96px;
+}
+
+.mercadopago img {
+  color: rgba(255, 255, 255, 0.6);
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  width: 63px;
+  height: 48px;
+}
+
+.collapsible {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  background-color: #106eea;
+  color: #222222;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  font-family: "Nerko One", cursive;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  font-family: "Yeon Sung", cursive;
+}
