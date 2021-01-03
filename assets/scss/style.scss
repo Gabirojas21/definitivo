@@ -5,6 +5,10 @@
 # Sobre navegador
 --------------------------------------------------------------*/
 
+.mobile-nav-toggle {
+    margin-top: 250px;
+}
+
 #topbar {
     background: $bkcolor;
     height: 40px;
@@ -500,8 +504,4 @@ label {
 
 .mobile-nav-active .mobile-nav-toggle i {
     color: #fff;
-}
-
-.mobile-nav-toggle {
-    margin-top: 150px;
 }
