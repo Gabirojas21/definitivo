@@ -1,53 +1,54 @@
-    @media screen and (max-width: 768px) {
-    [data-aos-delay] {
-        transition-delay: 0 !important;
-    }
-}
-
-@media (max-width: 992px) {
-    #header {
-        padding: 15px;
-        top: 0;
-    }
-    #header .logo {
-        font-size: 28px;
-    }
-}
-
-@media (max-width: 1366px) {
-    .nav-menu .drop-down .drop-down ul {
-        left: -90%;
-    }
-    .nav-menu .drop-down .drop-down:hover>ul {
-        left: -100%;
-        text-decoration: none;
-    }
-    .nav-menu .drop-down .drop-down>a:after {
-        content: "\ea9d";
-    }
-}
-
-@media screen and (max-width: 600px) {
-    table {
-        width: 100%;
-    }
-    thead {
-        display: none;
-    }
-    tr:nth-of-type(2n) {
-        background-color: inherit;
-    }
-    tr td:first-child {
-        background: #f0f0f0;
-        font-weight: bold;
-        font-size: 1.3em;
-    }
-    tbody td {
-        display: block;
-        text-align: center;
-    }
-    tbody td:before {
-        content: attr(data-th);
-        display: block;
-        text-align: center;
-    }
+        @media screen and (max-width: 768px) {
+            [data-aos-delay] {
+                transition-delay: 0 !important;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            #header {
+                padding: 15px;
+                top: 0;
+            }
+            #header .logo {
+                font-size: 28px;
+            }
+        }
+        
+        @media (max-width: 1366px) {
+            .nav-menu .drop-down .drop-down ul {
+                left: -90%;
+            }
+            .nav-menu .drop-down .drop-down:hover>ul {
+                left: -100%;
+                text-decoration: none;
+            }
+            .nav-menu .drop-down .drop-down>a:after {
+                content: "\ea9d";
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            table {
+                width: 100%;
+            }
+            thead {
+                display: none;
+            }
+            tr:nth-of-type(2n) {
+                background-color: inherit;
+            }
+            tr td:first-child {
+                background: #f0f0f0;
+                font-weight: bold;
+                font-size: 1.3em;
+            }
+            tbody td {
+                display: block;
+                text-align: center;
+            }
+            tbody td:before {
+                content: attr(data-th);
+                display: block;
+                text-align: center;
+            }
+        }
