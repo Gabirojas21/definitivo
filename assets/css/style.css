@@ -26,7 +26,6 @@ p {
 
 .fondo2 {
   background-image: url(/assets/img/family.jpg);
-  background-size: 100vw 100vh;
   background-attachment: fixed;
   margin-bottom: 20px;
 }
