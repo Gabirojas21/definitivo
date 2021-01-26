@@ -33,7 +33,7 @@ p {
 form {
   width: 450px;
   margin: auto;
-  background-color: #106eea;
+  background-color: 0, 0, 0, 0.4;
   padding: 10px 20px;
   box-sizing: border-box;
   margin-top: 20px;
