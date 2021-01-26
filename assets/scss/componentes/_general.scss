@@ -32,14 +32,16 @@ p {
 
 .fondo2 {
     background-image: url(/assets/img/family.jpg);
+    background-size: 100% auto;
     background-attachment: fixed;
+    margin-top: 250px;
     margin-bottom: 20px;
 }
 
 form {
     width: 450px;
     margin: auto;
-    background-color: 0, 0, 0, 0.4;
+    background-color: $bkcolor;
     padding: 10px 20px;
     box-sizing: border-box;
     margin-top: 20px;
