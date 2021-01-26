@@ -100,46 +100,25 @@
         </a>
     </div>
     <!--                       ---------------------------------------------CUERPO---------------------------                    -->
-    <div class="row d-flex justify-content-center align-items-center ml-3">
-        <div class="col-md-6 text center mt-3">
-            <div class="card border-primary mb-3">
-                <div class="card-body">
-                    <h3 class="text-md-center">Consulta:</h3>
-                    <hr>
-                    <form>
-                        <div class="md-form">
-                            <i class="icofont-cat-alt-3 icofont-2x prefix color"></i>
-                            <label>Nombre:</label>
-                            <input type="text" id="nombre" class="form-control border-primary">
+    <div class="fondo2">
+        <form method="POST">
+            <h2>
+                Contacto
+            </h2>
+            <label>Nombre:</label>
+            <input type="text" id="nombre" class="form-control border-primary" required>
 
-                        </div>
-                        <div class="md-form mt-1">
-                            <i class="icofont-at icofont-2x prefix color"></i>
-                            <label>Mail:</label>
-                            <input type="text" id="mail" class="form-control border-primary">
+            <label>Correo:</label>
+            <input type="text" id="mail" class="form-control border-primary" required>
 
-                        </div>
-                        <div class="md-form mt-1 ">
-                            <i class="icofont-chat icofont-2x  color"></i>
-                            <label for="texto">Detalle:</label>
-                            <br>
-                            <textarea class="form-control rounded-0 border-primary" id="detalle" rows="3"></textarea>
+            <label>Telefono:</label>
+            <input type="text" id="telefono" class="form-control border-primary" required>
 
-                        </div>
-                        <div class="text-center mt-2">
-                            <input type="summit" class="btn btn-primary texttt" value="Enviar"></input>
-                            <button type="reset" class="btn btn-primary texttt">Borrar</button>
-                        </div>
-                        <div class="text-center mt-2">
+            <label>Detalle:</label>
+            <textarea class="form-control  border-primary" id="detalle" rows="3" required></textarea>
 
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 text-center">
-            <img src="assets/img/family.jpg">
-        </div>
+            <input type="submit" class="btn btn-primary texttt mt-1" value="Enviar"></input>
+        </form>
     </div>
     <!--                       ---------------------------------------------PIE DE PAGINAAAAAAAA---------------------------                    -->
     <footer class="page-footer text-center">
